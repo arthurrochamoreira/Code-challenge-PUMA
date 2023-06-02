@@ -84,18 +84,17 @@ function App() {
   };
 
   const sortFavoritesAsc = () => {
-    setFavorites([...favorites].sort((a, b) => a.name.localeCompare(b.name)));
+    setFavorites([...favorites].sort((a, b) => (a.name && b.name) ? a.name.localeCompare(b.name) : 0));
     setSortOrder('asc');
   };
 
   const sortFavoritesDesc = () => {
-    setFavorites([...favorites].sort((a, b) => b.name.localeCompare(a.name)));
+    setFavorites([...favorites].sort((a, b) => (a.name && b.name) ? b.name.localeCompare(a.name) : 0));
     setSortOrder('desc');
   };
 
   return (
     <div className="body">
-      <div className="wave"></div>
       <div className="container">
         <div className="header">
           <h1>Usuários Favoritos do GitHub</h1>
