@@ -52,3 +52,7 @@ Siga as etapas abaixo para executar a aplicação:
 4. O backend estará em execução e pronto para receber as requisições da aplicação frontend.
 
 Certifique-se de ter o Node.js e o npm instalados em sua máquina antes de executar a aplicação.
+
+### Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE.md para detalhes.
