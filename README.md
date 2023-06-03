@@ -1,26 +1,22 @@
-# Lista de Usuários Favoritos do GitHub
+# Usuários Favoritos do GitHub
 
-Esta é uma aplicação web para criar uma lista de usuários favoritos do GitHub. A aplicação consiste em um frontend e um backend.
+Este projeto é uma aplicação web que permite ao usuário buscar usuários do GitHub e adicioná-los a uma lista de favoritos. A aplicação é dividida em duas partes principais: o servidor backend e o aplicativo frontend.
 
-## Tecnologias Utilizadas
+## Backend
 
-- Frontend:
-  - React: Framework JavaScript para construção de interfaces de usuário.
-  - React Router: Biblioteca de roteamento para navegação entre páginas no React.
-  - Axios: Biblioteca para fazer requisições HTTP.
+O servidor backend foi construído usando Node.js com o framework Express.js e a biblioteca Cors. Ele contém uma lista para armazenar os usuários favoritos e várias funções utilitárias para gerenciar essa lista.
 
-- Backend:
-  - Node.js: Ambiente de execução JavaScript no servidor.
-  - Express.js: Framework Node.js para construção de APIs web.
-  - Cors: Middleware para permitir requisições de origens diferentes na API.
+## Os principais endpoints da API são:
 
-## Funcionalidades
+POST /api/users: Adiciona um usuário à lista de favoritos. O corpo da solicitação deve conter as informações do usuário (username, name, avatar_url, html_url). Se a lista já contém 5 usuários ou o usuário já está na lista, um erro será retornado.
+GET /api/users: Retorna a lista de usuários favoritos.
+DELETE /api/users/:username: Remove um usuário da lista de favoritos. Se o usuário não for encontrado na lista, um erro será retornado.
+PATCH /api/users/:username/toggle-star: Marca ou desmarca um usuário como favorito. Se o usuário não for encontrado na lista, um erro será retornado.
 
-- Adicionar um usuário à lista de favoritos do GitHub.
-- Listar os usuários favoritos salvos em memória.
-- Remover um usuário da lista de favoritos.
-- Marcar/desmarcar um usuário com uma estrela.
-- Ordenar a lista de usuários em ordem alfabética de nome.
+## Frontend
+O aplicativo frontend foi construído com React e usa a biblioteca Axios para fazer solicitações HTTP.
+
+A interface do usuário inclui um campo de entrada de texto para o nome de usuário do GitHub e um botão para adicionar o usuário aos favoritos. Ele renderiza uma lista de usuários favoritos com informações relevantes e opções para estrelar, desestrelar e remover usuários.
 
 ## Como Executar a Aplicação
 
