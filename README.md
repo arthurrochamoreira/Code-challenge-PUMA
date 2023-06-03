@@ -8,9 +8,7 @@ O servidor backend foi construído usando Node.js com o framework Express.js e a
 
 ## Os principais endpoints da API são:
 
-POST /api/users: Adiciona um usuário à lista de favoritos. O corpo da solicitação deve conter as informações do usuário (username, name, avatar_url, html_url). 
-
-- Se a lista já contém 5 usuários ou o usuário já está na lista, um erro será retornado.
+- POST /api/users: Adiciona um usuário à lista de favoritos. O corpo da solicitação deve conter as informações do usuário (username, name, avatar_url, html_url). Se a lista já contém 5 usuários ou o usuário já está na lista, um erro será retornado.
 
 - GET /api/users: Retorna a lista de usuários favoritos.
 
