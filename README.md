@@ -53,6 +53,6 @@ Siga as etapas abaixo para executar a aplicação:
 
 Certifique-se de ter o Node.js e o npm instalados em sua máquina antes de executar a aplicação.
 
-### Licença
+## Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE.md para detalhes.
