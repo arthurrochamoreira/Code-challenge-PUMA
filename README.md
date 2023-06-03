@@ -19,7 +19,7 @@ O servidor backend foi construído usando Node.js com o framework Express.js e a
 ## Frontend
 O aplicativo frontend foi construído com React e usa a biblioteca Axios para fazer solicitações HTTP.
 
-A interface do usuário inclui um campo de entrada de texto para o nome de usuário do GitHub e um botão para adicionar o usuário aos favoritos. Ele renderiza uma lista de usuários favoritos com informações relevantes e opções para favoritar, desfavoritar, remover e ordenar por ordem alfabética usuários.
+A interface do usuário inclui um campo de entrada de texto para o nome de usuário do GitHub e um botão para adicionar o usuário aos favoritos. Ele renderiza uma lista de usuários favoritos com informações relevantes e opções para favoritar, desfavoritar e remover usuários.
 
 ## Como Executar a Aplicação
 
