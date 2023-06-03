@@ -8,10 +8,15 @@ O servidor backend foi construído usando Node.js com o framework Express.js e a
 
 ## Os principais endpoints da API são:
 
-POST /api/users: Adiciona um usuário à lista de favoritos. O corpo da solicitação deve conter as informações do usuário (username, name, avatar_url, html_url). Se a lista já contém 5 usuários ou o usuário já está na lista, um erro será retornado.
-GET /api/users: Retorna a lista de usuários favoritos.
-DELETE /api/users/:username: Remove um usuário da lista de favoritos. Se o usuário não for encontrado na lista, um erro será retornado.
-PATCH /api/users/:username/toggle-star: Marca ou desmarca um usuário como favorito. Se o usuário não for encontrado na lista, um erro será retornado.
+POST /api/users: Adiciona um usuário à lista de favoritos. O corpo da solicitação deve conter as informações do usuário (username, name, avatar_url, html_url). 
+
+- Se a lista já contém 5 usuários ou o usuário já está na lista, um erro será retornado.
+
+- GET /api/users: Retorna a lista de usuários favoritos.
+
+- DELETE /api/users/:username: Remove um usuário da lista de favoritos. Se o usuário não for encontrado na lista, um erro será retornado.
+
+- PATCH /api/users/:username/toggle-star: Marca ou desmarca um usuário como favorito. Se o usuário não for encontrado na lista, um erro será retornado.
 
 ## Frontend
 O aplicativo frontend foi construído com React e usa a biblioteca Axios para fazer solicitações HTTP.
